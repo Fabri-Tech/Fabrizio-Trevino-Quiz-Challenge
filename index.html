@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/Style/style.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
       <div>
-        <a href="highscores.html"
+        <!-- This section of the code creates a button that links to a high score page. When clicked, the user will be directed to the "highscore.html" page. -->
+
+        <a href="highscore.html"
           ><button class="scores-header" id="view-high-scores">
             View High Scores
           </button></a
         >
       </div>
 
+      <!-- This section of the code creates a timer element that will be used to keep track of the time remaining for the quiz. -->
       <div class="timer">
         <p>
           Time:
@@ -52,6 +56,7 @@
         </p>
       </div>
 
+      <!-- is used to display feedback to the user on whether their answer was correct or incorrect. It is hidden by default, and will only be shown when the user answers a question. -->
       <div id="feedback" class="feedback hide"></div>
       <script src="./assets/JS/app.js"></script>
     </main>
