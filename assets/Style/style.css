@@ -1,0 +1,120 @@
+/* Estilos generales */
+
+* {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz,
+.scores {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0px 3px 10px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+}
+
+p {
+  margin: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+button {
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(74,78,105,0.9); 
+  border-radius: 5px;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease-in-out;
+  background-image: linear-gradient(to bottom, rgba(69, 9, 251, 0.2), rgba(111, 0, 255, 0.5)); 
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: #22223b;
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+input[type="text"] {
+  font-size: 100%;
+  border: 2px solid #1E90FF;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(75, 119, 190, 0.4);
+}
+
+.hide {
+  display: none;
+}
+
+.feedback {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 2px solid #4B0082;
+}
+
+ol {
+  padding-left: 15px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+li {
+  padding: 5px;
+  list-style: decimal inside none;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+li:nth-child(odd) {
+  background-color: #5704bd;
+  color: #fff;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas que 768px */
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* Estilos para pantallas más pequeñas que 575px */
+  .quiz,
+  .scores {
+    margin: 10px;
+    padding: 10px;
+  }
+}
